@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from litestar_zstd.config import ZstdConfig, PoolConfig
-from litestar_zstd.plugin import ZstdPlugin
+from litestar_zstd.middleware import ZstdCompressionMiddleware
+from litestar_zstd.facade import ZstandardCompressionFacade
 
-__all__ = ("ZstdConfig", "PoolConfig", "ZstdPlugin")
+__all__ = ("ZstdCompressionMiddleware", "ZstandardCompressionFacade")

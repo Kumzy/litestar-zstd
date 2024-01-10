@@ -22,8 +22,8 @@ classifiers = [
   "Topic :: Database :: Database Engines/Servers",
 ]
 dependencies = [
-  "litestar[cli]>=2.0.1",
-  "zstandard>=0.22.0",
+    "litestar @ git+https://github.com/litestar-org/litestar@develop",
+    "zstandard>=0.22.0",
 ]
 description = "Zstd plugin for Litestar"
 keywords = [
@@ -50,7 +50,9 @@ build-backend = "hatchling.build"
 requires = ["hatchling"]
 
 [tool.pdm.dev-dependencies]
-dev = []
+dev = [
+    "pytest>=7.4.4",
+]
 docs = [
   "sphinx>=7.1.2",
   "sphinx-autobuild>=2021.3.14",
